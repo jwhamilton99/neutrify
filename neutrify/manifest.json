@@ -1,0 +1,24 @@
+{
+
+  "manifest_version": 2,
+  "name": "Neutrify",
+  "version": "1.0",
+
+  "description": "Replaces all instances of 'he or she' with 'they'.",
+
+  "icons": {
+    "48": "icons/icon.png"
+  },
+  
+  "browser_action": {
+    "default_icon": "icons/icon.png",
+    "default_title": "Neutrify"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["neutrify.js"]
+    }
+  ]
+}
